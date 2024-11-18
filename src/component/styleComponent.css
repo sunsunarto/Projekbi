@@ -1,0 +1,57 @@
+.containers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #F2BFA4;
+    padding: 20px;
+}
+
+.storybox {
+    background-color: #F5E7DE;
+    padding: 20px;
+    border: 1px solid black;
+    width: 400px;
+    text-align: center;
+}
+
+.storybox img {
+    max-width: 200px;
+}
+
+h1, p {
+    text-align: left;
+}
+
+.menuBox {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+    position: absolute;
+    top: 2em;
+    right: 2em; /* Adjusted to right for better alignment */
+}
+
+.menuBox span {
+    width: 25px;
+    height: 3px;
+    background: #1a936f;
+    border-radius: 3px;
+}
+
+.navigation {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .menuBox {
+        display: flex; /* Show menu box on smaller screens */
+    }
+
+    .navigation.active {
+        display: flex; /* Show navigation when active */
+    }
+}

@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#F5E7DE;
+    max-width: 100%;
+    padding: 20px;
+}
+h6{
+    color: black;
+    font-size: 30px;
+    span{
+        color: #7CAADC;
+    }
+}
+.navigation {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    align-items: center;
+    a{
+        text-decoration: none;
+        color: #7CAADC;
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 20px;
+        border: white,solid 1px;
+        background-color: white;
+    }
+    a:hover{
+        color: black;
+        background-color: #F2BFA4;
+    }
+}
